@@ -34,5 +34,12 @@ func main() {
 	}
 
 	fmt.Println("Your guess is", guess)
-	fmt.Println("The secret number is", secretNumber)
+
+	if guess > secretNumber {
+		fmt.Println("Your guess is bigger than the secret number. Try again.")
+	} else if guess < secretNumber {
+		fmt.Println("Your guess is smaller than the secret number. Try again.")
+	} else {
+		fmt.Println("Correct, you Legend!")
+	}
 }
